@@ -8,8 +8,35 @@
     <title>Recipe Generator🥐</title>
   </head>
   <body>
-   
-
+    <div class="form-container">
+      <form id="recipe-generator-form">
+        <input
+          type="text"
+          placeholder="Enter the recipe you want to generate"
+          autofocus
+          required
+          autocomplete="off"
+          class="instructions"
+          id="user-instructions"
+        />
+        <input type="submit" class="submit-button" />
+        <div class="hint">i.e: Tiramisu, Pasta, Pizza</div>
+      </form>
+    </div>
+    <div class="poem hidden" id="poem"></div>
+    <div class="paper">
+      <div class="lines">
+        <div class="text" id="recipe-text" spellcheck="false"></div>
+      </div>
+      <div class="holes hole-top"></div>
+      <div class="holes hole-middle"></div>
+      <div class="holes hole-bottom"></div>
+    </div>
+    <img
+      src="/images/cooking.svg"
+      alt="cooking illustration"
+      class="cooking-image"
+    />
     <footer>
       This AI project was coded by
       <a href="https://github.com/mayza-ferreira" target="_blank"
@@ -17,16 +44,19 @@
       >
       and is
       <a
-        href=""
+        href="https://github.com/mayza-ferreira/Recipe-AI-Generator-"
         target="_blank"
       >
         open-sourced on GitHub</a
       >
       and is
-      <a href="" target="_blank"
+      <a href="https://airecipegenerator-mf.netlify.app" target="_blank"
         >hosted on Netlify</a
       >.
     </footer>
+
     <script src="/src/index.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </body>
 </html>
