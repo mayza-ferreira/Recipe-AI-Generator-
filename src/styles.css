@@ -50,9 +50,9 @@ body {
   left: 55px;
   bottom: 10px;
   right: 10px;
-  line-height: 25px;
   overflow: hidden;
   outline: none;
+  line-height: 25px;
 }
 .holes {
   position: absolute;
@@ -155,4 +155,38 @@ form {
   right: 20px;
   width: 450px;
   height: auto;
+}
+
+.text h1,
+.text h2,
+.text h3,
+.text h4,
+.text h5,
+.text h6 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+}
+
+.text p {
+  margin: 0;
+  line-height: 25px;
+}
+
+.text ul,
+.text ol {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 25px;
+}
+
+.text li {
+  margin: 0;
+  line-height: 25px;
+}
+
+.text strong {
+  font-weight: bold;
 }

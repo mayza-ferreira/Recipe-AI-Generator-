@@ -1,6 +1,8 @@
 function displayRecipe(response) {
+  let markdown = response.data.answer;
+  let html = marked.parse(markdown);
   new Typewriter("#recipe-text", {
-    strings: response.data.answer.replace(/\n/g, "<br>"),
+    strings: html,
     autoStart: true,
     cursor: null,
     delay: 10,
