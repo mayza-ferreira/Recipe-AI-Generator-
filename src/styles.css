@@ -248,7 +248,7 @@ form {
 /* -------------------------
      SMALL SCREENS (Mobile)
      ------------------------- */
-@media (max-width: 767px) {
+@media (max-width: 1440px) {
   body {
     display: flex;
     flex-direction: column;
@@ -356,6 +356,38 @@ form {
   footer {
     position: relative;
     top: 85%;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+  .paper {
+    width: 70%;
+    min-height: 55%;
+    height: auto;
+    left: 50%;
+    margin-left: -35%;
+    top: 50%;
+    position: relative;
+  }
+  .form-container {
+    width: 30%;
+    top: 5%;
+    padding: 20px;
+    height: 15%;
+    border-radius: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .instructions {
+    font-size: 14px;
+  }
+  footer {
+    position: relative;
+    top: 95%;
     text-align: center;
     font-size: 10px;
     padding: 10px;
