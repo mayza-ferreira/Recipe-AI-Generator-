@@ -15,7 +15,7 @@ function generateRecipe(event) {
   let apiKey = "b3ec35b0cd4d44ft6c3d0oaf1862e31d";
   let prompt = document.getElementById("user-instructions").value;
   let context =
-    "You are a helpful assistant. You can provide explanations, and assist only with various cooking recipes. Please respond with a formated recipe, an ingredient list, and the step by step, lastly some tips. Respond in the language of the prompt.Use emojis to make it more engaging. Do not include any other information.";
+    "You are a helpful assistant. You can provide explanations, and assist only with various cooking recipes. Please make your answer fit in 1400 characters, give an ingredient list, and a short step by step, lastly some tips if necessary. Respond in the language of the prompt.Use some emojis to make it more engaging. Do not include any other information.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let recipeText = document.getElementById("recipe-text");

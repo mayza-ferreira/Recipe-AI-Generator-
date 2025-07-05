@@ -53,6 +53,7 @@ body {
   overflow: hidden;
   outline: none;
   line-height: 25px;
+  color: #545E6E;
 }
 .holes {
   position: absolute;
@@ -85,6 +86,16 @@ a {
   color: #99a180;
   font-weight: bold;
 }
+.title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  font-size: 40px;
+  color: #545E6E;
+  text-align: center;
+  font-family: "Pangolin";
+}
 
 form {
   padding: 30px;
@@ -101,7 +112,7 @@ form {
   box-shadow: 5px 3px 3px #99a180;
   padding: 12px;
   border-radius: 45px;
-  height: 200px;
+  height: 210px;
   width: 400px;
   position: absolute;
   top: 30%;
@@ -189,4 +200,55 @@ form {
 
 .text strong {
   font-weight: bold;
+}
+
+.croissant-sticker {
+  margin-left: 5px;
+  position: absolute;
+  bottom: -20px;
+  right: -40px;
+  width: 100px;
+  height: auto;
+  opacity: 0.8;
+}
+.egg-sticker {
+  position: absolute;
+  top: -25px;
+  left: -40px;
+  width: 100px;
+  height: auto;
+}
+.cake-sticker {
+  position: absolute;
+  bottom: -20px;
+  right: -45px;
+  width: 100px;
+  height: auto;
+}
+
+.sticker-column {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  right: 10%;
+}
+
+.sticker-item {
+  margin-bottom: 50px;
+  width: 200px;
+  height: auto;
+  opacity: 0.5;
+  rotate: -10deg;
+}
+
+.bread-sticker {
+  position: absolute;
+  top: 5px;
+  left: -20px;
+  width: 100px;
+  height: auto;
+}
+.sticker {
+  opacity: 0.88;
 }

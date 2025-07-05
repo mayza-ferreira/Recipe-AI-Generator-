@@ -3,12 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="src/styles.css" />
     <title>Recipe Generator🥐</title>
   </head>
   <body>
     <div class="form-container">
+      <img
+        src="/images/eggSticker.png"
+        alt="Egg Sticker"
+        class="egg-sticker sticker"
+      />
+
       <form id="recipe-generator-form">
         <input
           type="text"
@@ -20,14 +25,33 @@
           id="user-instructions"
         />
         <input type="submit" class="submit-button" />
+
         <div class="hint">
-          i.e: Tiramisu, Pasta, or ingredients <br />
+          <strong>Hint:</strong> You can ask for a specific recipe, or describe
+          the type of dish you want, like "a vegan pasta recipe".
+          <br />
           You can use any language
         </div>
+        <img
+          src="/images/cakeSticker.png"
+          alt="cake sticker"
+          class="cake-sticker sticker"
+        />
       </form>
     </div>
-    <div class="poem hidden" id="poem"></div>
+
     <div class="paper">
+      <img
+        src="/images/croissantSticker.png"
+        alt="croissantSticker"
+        class="croissant-sticker sticker"
+      />
+      <img
+        src="/images/breadSticker.png"
+        alt="bread sticker"
+        class="bread-sticker sticker"
+      />
+      <div class="title">Recipe Generator</div>
       <div class="lines">
         <div class="text" id="recipe-text" spellcheck="false"></div>
       </div>
@@ -35,17 +59,27 @@
       <div class="holes hole-middle"></div>
       <div class="holes hole-bottom"></div>
     </div>
-    <img
-      src="/images/cooking.svg"
-      alt="cooking illustration"
-      class="cooking-image"
-    />
+
+    <div class="sticker-column">
+      <img src="/images/honeySticker.png" class="sticker-item" alt="Sticker " />
+      <img
+        src="/images/knifeSticker.png"
+        class="sticker-item"
+        alt="Sticker 3"
+      />
+      <img
+        src="/images/carrotSticker.png"
+        class="sticker-item"
+        alt="Sticker 1"
+      />
+    </div>
+
     <footer>
       This AI project was coded by
       <a href="https://github.com/mayza-ferreira" target="_blank"
         >Mayza Ferreira</a
       >
-      and is
+      , is
       <a
         href="https://github.com/mayza-ferreira/Recipe-AI-Generator-"
         target="_blank"
